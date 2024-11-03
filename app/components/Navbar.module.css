@@ -1,0 +1,90 @@
+.navbar_conteiner{
+    width: 100%;
+    height: 4.2vw;
+    padding-top: 1vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar_title{
+    position: absolute;
+    left: 1.8vw;
+
+    background-image: url('../assets/CodeSeller.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    height: 100%;
+    width: 15vw;
+}
+
+.navbar_links{
+    position: fixed;
+    top: -9.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+
+    width: 25vw;
+    height: 2.5vw;
+    
+    border-radius: 10px;
+    background-color: rgba(16, 16, 16, 0.2);
+
+    transition: all 0.5s ease-out;  
+    z-index: 999;
+}
+
+.navbar_link{
+    width: 4.2vw;
+    height: 60%;
+    
+    text-align: center;
+    color: var(--black);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.55vw;
+    letter-spacing: 0.7;
+    font-weight: bold;
+
+    transition: all 0.5s ease;
+}
+.navbar_link:hover{
+    background-color: rgba(16, 16, 16, 0.2);
+}
+.navbar_link_search_icon{
+    width: 1.1vw;
+    height: 1.1vw;
+}
+.navbar_link_active{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+.scrolled{
+    background-color: rgba(16, 16, 16, 0.8);
+}
+.scrolled .navbar_link{
+    color: var(--white);
+}
+.scrolled .navbar_link:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.scrolled .navbar_link_active{
+    background-color: var(--white);
+    color: var(--black);
+}

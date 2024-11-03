@@ -1,0 +1,24 @@
+.sponsor_bar{
+    height: 150px;
+    background-color: #F7F6E5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+    /* animation: scroll 35s linear infinite; */
+}
+/* 
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+   */
+.main_image {
+    height: 3vw;
+    width: auto;
+}

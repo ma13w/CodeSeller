@@ -1,0 +1,44 @@
+.main {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100%;
+
+  background-image: url('../assets/bg_pricing.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 1;
+
+  z-index: -999;
+}
+
+.main_container{
+  width: 80%;
+  height: 80%;
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_title img{
+  width: 30vw;
+  height: auto;
+  padding-bottom: 5vw;
+}
+

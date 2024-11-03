@@ -1,0 +1,145 @@
+.rate_container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.8vw;
+}
+.main_rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+}
+.rate_bg{
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../assets/review_bg.png");
+    background-size: cover;
+}
+
+.review {
+    position: relative;
+    width: 22vw;
+    height: 26vw;
+    padding: 1.5vw;
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+    
+    border: 1px solid transparent;
+    background-clip: padding-box, border-box; 
+    background-origin: border-box;
+
+    filter: drop-shadow(7px 7px 50px rgba(0, 0, 0, 0.25));
+}
+#review_0{
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF), linear-gradient(82deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+#review_1{
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF), linear-gradient(188deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    height: 28.6vw;
+}
+#review_2{
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF), linear-gradient(-98deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.review:hover{
+    filter: drop-shadow(7px 7px 75px rgba(0, 0, 0, 0.45));
+}
+
+.main_image{
+    width: 4.1vw;
+    height: 4.1vw;
+}
+
+.review_name{
+    font-size: 1.5vw;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.review_title{
+    font-size: 1vw;
+    font-weight: 700;
+}
+.review_text{
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+}
+.review_stars{
+    width: 12.34vw;
+    height: 2.2vw;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.review_stars img{
+    width: 100%;
+    height: auto;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.review_cta {
+    --color: var(--ancient-green);
+    --resize: 4.5;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 25vw;
+    height: 5.2vw;
+    
+    margin: 0.8vw;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+    border: 0.08vw solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+
+    font-size: 1.172vw;
+    border-radius: 99999px;
+    font-weight: 900;
+    color: var(--color);
+}
+
+.review_cta:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 26vw;
+    width: 35vw;
+    border-radius: 50%;
+}
+.review_cta:hover {
+    color: #fff;
+}
+  .review_cta:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+.review_cta:hover:before {
+    top: -5.2vw;
+    left: -5.2vw;
+}
+.review_cta:active:before {
+    transition: background 0s;
+}
+  /* https://uiverse.io/cssbuttons-io/slippery-jellyfish-67 */
+  /* per footer o about: https://uiverse.io/Praashoo7/smooth-crab-52 */
+  /* cercare anche su: https://www.fffuel.co/ */
